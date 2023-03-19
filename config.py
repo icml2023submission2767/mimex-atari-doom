@@ -13,9 +13,9 @@ args = parser.parse_args()
 config = configparser.ConfigParser()
 
 if args.env is None:
-    config.read('configs/config.conf')
+    config.read('config.conf')
 else:
-    config.read(f'configs/config_{args.env}_{args.algo}.conf')
+    config.read(f'config_{args.env}_{args.algo}.conf')
 
 print(f'Read config {args.env} {args.algo}')
 
